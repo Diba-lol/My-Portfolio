@@ -1,8 +1,13 @@
+*{
+  box-sizing: border-box;
+}
+
 body{
   background-color: rgb(21, 21, 21);
-  height: 5150px;
+  min-height: 100vh;
   padding-left: 330px;
-  margin: 0%;
+  margin: 0;
+  overflow-x: hidden;
 }
 
 a{
@@ -18,18 +23,18 @@ a{
   color: white;
   width: 280px;
   bottom: 0;
-  border-right-style:groove;
+  border-right-style: groove;
   border-right-color: rgb(0, 179, 255);
   border-right-width: 15px;
-  padding-top: 25px;
-  padding-left: 30px;
+  padding: 25px 20px 30px 30px;
+  z-index: 10;
 }
 
 .title{
   font-family: "Abril Fatface", serif;
   font-style: normal;
   font-weight: 300;
-  font-size: 60px;
+  font-size: 50px;
   margin: 0%;
   letter-spacing: 2px;
 }
@@ -85,13 +90,14 @@ a{
   height: 50px;
   font-family: "Poppins", sans-serif;
   font-weight: bold;
-  transition: background-color 0.5s,color 0.5s;
+  transition: background-color 0.5s, color 0.5s, transform 0.3s ease;
   cursor: pointer;
 }
 
 .button-1:hover{
   background-color: white;
   color: rgb(0, 179, 255);
+  transform: translateY(-2px);
 }
 
 .button-1:active{
