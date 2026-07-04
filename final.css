@@ -1,0 +1,182 @@
+.contact{
+  font-family: "Abril Fatface", serif;
+  color: white;
+  font-size: 50px;
+  margin-bottom: 0px;
+  letter-spacing: 2px;
+  margin-left: 30px;
+  margin-top: 80px;
+}
+
+.contact-description{
+  font-family: "Poppins", sans-serif;
+  color: gray;
+  letter-spacing: 1px;
+  font-size: 15px;
+  width: 800px;
+  margin-top: 20px;
+  margin-left: 30px;
+}
+
+.contact-image{
+  width: 50px;
+  height: 50px;
+  margin-top: 30px;
+  margin-left: 40px;
+
+}
+
+.contact-container{
+  display: flex;
+  flex-direction: row;
+  margin-top: 50px;
+  background-color: white;
+  height: 280px;
+  margin-left: 30px;
+  margin-right: 60px;
+  border-radius: 10px;
+  transition: box-shadow 0.3s ease;
+}
+
+.contact-container:hover{
+  box-shadow: 0px 0px 10px rgb(0, 179, 255);
+  transition: box-shadow 0.3s ease;
+}
+
+.contact-images{
+  display: flex;
+  flex-direction: column;
+}
+
+.contact-text1{
+  font-family: "Poppins", sans-serif;
+  color: gray;
+  letter-spacing: 1px;
+  font-size: 15px;
+  margin-top: 10px;
+  margin-left: 40px;
+  display: inline-block;
+}
+
+.contact-text2{
+  font-family: "Poppins", sans-serif;
+  color: gray;
+  letter-spacing: 1px;
+  font-size: 15px;
+  margin-top: 45px;
+  margin-left: 40px;
+  display: inline-block;
+}
+
+.contact-text3{
+  font-family: "Poppins", sans-serif;
+  color: gray;
+  letter-spacing: 1px;
+  font-size: 15px;
+  margin-top: 45px;
+  margin-left: 40px;
+  display: inline-block;
+}
+
+.contact-text1:hover, .contact-text2:hover, .contact-text3:hover{
+  color: rgb(0, 179, 255);
+  cursor: pointer;
+}
+
+.contact-info{
+  display: flex;
+  flex-direction: column;
+  margin-top: 30px;
+}
+
+.contact-form1{
+  display: flex;
+  flex-direction: row;
+  margin-top: 40px;
+}
+
+.contact-text{
+  font-family: "Poppins", sans-serif;
+  color: gray;
+  letter-spacing: 1px;
+  font-size: 15px;
+  margin-top: 10px;
+  margin-left: 30px;
+}
+
+.input-field1{
+  width: 300px;
+  height: 30px;
+  margin-top: 10px;
+  margin-left: 30px;
+  border: none;
+  background-color: rgb(21, 21, 21);
+  color: white;
+  border-bottom: 1px solid rgb(0, 179, 255);
+}
+
+.input-field1:focus{
+  outline: none;
+  border-bottom: 1px solid rgb(0, 179, 255);
+}
+
+.contact-form-group{
+  margin-left: 60px;
+}
+
+.contact-form2{
+  margin-top: 50px;
+}
+
+.input-field2{
+  width: 700px;
+  height: 30px;
+  margin-top: 10px;
+  margin-left: 30px;
+  border: none;
+  background-color: rgb(21, 21, 21);
+  color: white;
+  border-bottom: 1px solid rgb(0, 179, 255);
+}
+
+.input-field2:focus{
+  outline: none;
+  border-bottom: 1px solid rgb(0, 179, 255);
+}
+
+.contact-form3{
+  margin-top: 50px;
+}
+
+.submit-button{
+  width: 200px;
+  height: 50px;
+  margin-top: 60px;
+  margin-left: 30px;
+  background-color: white;
+  color: rgb(0, 179, 255);
+  font-family: "Poppins", sans-serif;
+  font-weight: bold;
+  border: none;
+  cursor: pointer;
+}
+
+.submit-button:hover{
+  background-color: rgb(0, 179, 255);
+  color: white;
+  transition: background-color 0.3s ease, color 0.3s ease;
+
+}
+
+.submit-button:active{
+  opacity: 80%;
+}
+
+.footer-text{
+  font-family: "Poppins", sans-serif;
+  color: gray;
+  letter-spacing: 1px;
+  font-size: 15px;
+  margin-top: 50px;
+  margin-left: 30px;
+}

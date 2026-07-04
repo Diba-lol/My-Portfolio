@@ -1,0 +1,274 @@
+.img-1{
+  margin-top: 30px;
+  object-fit: cover;
+  width: 420px;
+  height: 580px;
+  transition: transform 0.4s ease, box-shadow 0.4s ease;
+  border-style: solid;
+  border-radius: 20px;
+  margin-left: 20px;
+}
+
+.img-1:hover,
+.img-1:active{
+  transform: translateX(5px) scale(1.01);
+  box-shadow: 0 8px 20px rgba(0, 0, 0, 0.25);
+}
+
+.home-container{
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+
+}
+
+.hello{
+  padding-top: 140px;
+  padding-right: 50px;
+
+}
+
+.info{
+  font-family: "Poppins", sans-serif;
+  color: gray;
+  font-weight: bold;
+  letter-spacing: 2px;
+
+}
+
+.name{
+  font-family: "Abril Fatface", serif;
+  color: white;
+  font-size: 50px;
+  margin-bottom: 0px;
+  letter-spacing: 2px;
+}
+
+.description{
+   font-family: "Abril Fatface", serif;
+   color: white;
+   margin-top: 2px;
+   letter-spacing: 1px;
+}
+
+.description1{
+   font-family: "Poppins", sans-serif;
+   color: gray;
+   margin-top: 10px;
+   letter-spacing: 1px;
+   font-size: 15px;
+   width: 340px;
+   border-left: 2px solid rgb(0, 179, 255);
+   padding-left: 10px;
+   margin-top: 20px;
+}
+
+.btn{
+ background-color: rgb(21, 21, 21);
+  color: white;
+  border-style: solid;
+  border-color: white;
+  width: 200px;
+  height: 50px;
+  font-family: "Poppins", sans-serif;
+  font-weight: bold;
+  transition: background-color 0.5s,color 0.5s;
+  cursor: pointer;
+  margin-top: 40px;
+}
+
+.btn:hover{
+  background-color: white;
+  color: rgb(0, 179, 255);
+}
+.abt{
+  font-family: "Abril Fatface", serif;
+  color: white;
+  font-size: 50px;
+  margin-bottom: 0px;
+  letter-spacing: 2px;
+  margin-left: 30px;
+  margin-top: 80px;
+}
+.aboutme{
+  font-family: "Poppins", sans-serif;
+  color: gray;
+  font-size: 18px;
+  margin-left: 30px;
+  margin-top: 20px;
+  width: 800px;
+  line-height: 1.5;
+}
+
+.skills-section{
+  margin: 40px 30px 0;
+  width: 700px;
+}
+
+.skills-title{
+  font-family: "Abril Fatface", serif;
+  color: white;
+  font-size: 50px;
+  margin-bottom: 20px;
+}
+
+.skill-item{
+  margin-bottom: 18px;
+}
+
+.skill-label{
+  display: flex;
+  justify-content: space-between;
+  color: white;
+  font-family: "Poppins", sans-serif;
+  font-size: 15px;
+  margin-bottom: 8px;
+}
+
+.progress-bar{
+  width: 100%;
+  height: 40px;
+  background-color: #333;
+  border-radius: 30px;
+  overflow: hidden; 
+}
+
+ 
+.progress-fill{
+  height: 100%;
+  border-radius: 30px;
+  transform: scaleX(0);
+  transform-origin: left;
+  animation: fillBar 1.2s ease forwards;
+}
+
+.html{ width: 90%; background: linear-gradient(90deg, rgb(0,179,255), rgb(0, 102, 255)); }
+.css{ width: 85%; background: linear-gradient(90deg, rgb(0,179,255), rgb(0, 102, 255)); }
+.fb{ width: 80%; background: linear-gradient(90deg, rgb(0,179,255), rgb(0, 102, 255)); }
+.rd{ width: 70%; background: linear-gradient(90deg, rgb(0,179,255), rgb(0, 102, 255)); }
+.git{ width: 90%; background: linear-gradient(90deg, rgb(0,179,255), rgb(0, 102, 255)); }
+.github{ width: 95%; background: linear-gradient(90deg, rgb(0,179,255), rgb(0, 102, 255)); }
+.js{ width: 40%; background: linear-gradient(90deg, rgb(0,179,255), rgb(0, 102, 255)); }
+
+@keyframes fillBar {
+  from { transform: scaleX(0); }
+  to { transform: scaleX(1); }
+}
+
+.project{
+  font-family: "Abril Fatface", serif;
+  color: white;
+  font-size: 50px;
+  margin-bottom: 0px;
+  letter-spacing: 2px;
+  margin-left: 30px;
+  margin-top: 80px;
+}
+
+.pro{
+  font-family: "Abril Fatface", serif;
+  color: white;
+  font-size: 30px;
+  margin-bottom: 0px;
+  letter-spacing: 2px;
+  margin-left: 30px;
+}
+
+.project-title{
+  font-family: "Poppins", sans-serif;
+  color: gray;
+  font-size: 18px;
+  margin-left: 30px;
+  margin-top: 20px;
+  width: 800px;
+  line-height: 1.5;
+}
+
+.project-image{
+  width: 800px;
+  height: 400px;
+  object-fit: cover;
+  object-position: top;
+  margin-left: 30px;
+  margin-top: 20px;
+  border-radius: 10px;
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+
+}
+
+.project-image:hover,
+.project-image:active{
+  transform: translateY(-5px) scale(1.02);
+  box-shadow: 0 8px 20px rgba(0, 0, 0, 0.25);
+}
+
+.project-description{
+  font-family: "Poppins", sans-serif;
+  color: gray;
+  font-size: 16px;
+  width: 750px;
+  line-height: 2;
+  padding: 10px;
+  margin-left: 30px;
+  margin:auto
+
+}
+
+.project-box{
+  background-color: rgb(21, 21, 21);
+  border-style: solid;
+  border-color: rgb(134, 134, 134);
+  width: 800px;
+  margin-left: 30px;
+  height: 90px;
+  margin-top: 40px;
+  border-radius: 10px;
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+  transition: transform 0.3s ease, box-shadow 0.3s ease; 
+}
+
+.project-box:hover,
+.project-box:active{  
+  transform: translateY(-5px) scale(1.02);
+  box-shadow: 0 8px 20px rgba(0, 0, 0, 0.25);
+}
+
+.project-button{
+  background-color: rgb(21, 21, 21);
+  color: white;
+  border-style: solid;
+  border-color: white;
+  width: 200px;
+  height: 50px;
+  font-family: "Poppins", sans-serif;
+  font-weight: bold;
+  transition: background-color 0.5s,color 0.5s;
+  cursor: pointer;
+  margin-left: 30px;
+  margin-top: 40px;
+}
+
+.project-button:hover{
+  background-color: white;
+  color: rgb(0, 179, 255);
+}
+
+.tech-images{
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  margin-left: 30px;
+  margin-top: 60px;
+  margin-right: 70px;
+}
+
+.tech-image{
+  width: 180px;
+  object-fit: contain;
+  transition: transform 0.3s ease, box-shadow 0.3s ease;  
+}
+
+.tech-image:hover,
+.tech-image:active{ 
+  transform: translateY(-5px) scale(1.02);
+}

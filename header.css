@@ -1,0 +1,107 @@
+body{
+  background-color: rgb(21, 21, 21);
+  height: 5150px;
+  padding-left: 330px;
+  margin: 0%;
+}
+
+a{
+  text-decoration: none;
+  color: white;
+}
+.side-bar{
+  display: inline-block;
+  position: fixed;
+  top: 0;
+  left: 0;
+  background-color: black;
+  color: white;
+  width: 280px;
+  bottom: 0;
+  border-right-style:groove;
+  border-right-color: rgb(0, 179, 255);
+  border-right-width: 15px;
+  padding-top: 25px;
+  padding-left: 30px;
+}
+
+.title{
+  font-family: "Abril Fatface", serif;
+  font-style: normal;
+  font-weight: 300;
+  font-size: 60px;
+  margin: 0%;
+  letter-spacing: 2px;
+}
+
+.side-container2{
+  font-family: "Poppins", sans-serif;
+  font-weight: 400;
+  font-style: normal;
+  margin-top: 50px;
+  width: 50px;
+
+}
+
+.side-contant{
+  cursor: pointer;
+  position: relative;
+  display: inline-block;
+  transition: color 0.3s ease;
+  margin-right: 18px;
+  margin-top: 5px;
+}
+
+.side-contant::after{
+  content: "";
+  position: absolute;
+  left: 0;
+  bottom: -2px;
+  width: 0;
+  height: 2px;
+  background-color: rgb(0, 179, 255);
+  transition: width 0.3s ease;
+}
+
+.side-contant:hover{
+  color: rgb(0, 179, 255);
+}
+
+.side-contant:hover::after{
+  width: 100%;
+}
+
+.side-container3{
+  width: 200px;
+  margin-top: 140px;
+}
+
+.button-1{
+  background-color: black;
+  color: white;
+  border-style: solid;
+  border-color: white;
+  width: 200px;
+  height: 50px;
+  font-family: "Poppins", sans-serif;
+  font-weight: bold;
+  transition: background-color 0.5s,color 0.5s;
+  cursor: pointer;
+}
+
+.button-1:hover{
+  background-color: white;
+  color: rgb(0, 179, 255);
+}
+
+.button-1:active{
+  opacity: 80%;
+}
+
+
+svg{
+  margin-top: 20px;
+  margin-right: 10px;
+  cursor: pointer;
+  
+} 
