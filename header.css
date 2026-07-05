@@ -5,7 +5,7 @@
 body{
   background-color: rgb(21, 21, 21);
   min-height: 100vh;
-  padding-left: 330px;
+  padding-left: clamp(250px, 22vw, 330px);
   margin: 0;
   overflow-x: hidden;
 }
@@ -21,13 +21,31 @@ a{
   left: 0;
   background-color: black;
   color: white;
-  width: 280px;
+  width: clamp(240px, 22vw, 280px);
   bottom: 0;
   border-right-style: groove;
   border-right-color: rgb(0, 179, 255);
   border-right-width: 15px;
   padding: 25px 20px 30px 30px;
   z-index: 10;
+}
+
+.menu-toggle{
+  display: none;
+  background: transparent;
+  border: none;
+  color: white;
+  font-size: 28px;
+  cursor: pointer;
+  padding: 0;
+  margin-bottom: 10px;
+}
+
+.side-container1{
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 12px;
 }
 
 .title{
@@ -45,7 +63,7 @@ a{
   font-style: normal;
   margin-top: 50px;
   width: 50px;
-
+  max-width: 180px;
 }
 
 .side-contant{
@@ -110,4 +128,105 @@ svg{
   margin-right: 10px;
   cursor: pointer;
   
+}
+
+@media (max-width: 1100px){
+  body{
+    padding-left: 0;
+  }
+
+  .menu-toggle{
+    display: inline-flex !important;
+    align-items: center;
+    justify-content: center;
+    width: 42px;
+    height: 42px;
+    border-radius: 6px;
+    border: 1px solid rgb(0, 179, 255);
+    background-color: rgba(0, 179, 255, 0.1);
+    color: white;
+    font-size: 24px;
+    line-height: 1;
+  }
+
+  .side-bar{
+    position: static;
+    width: 100%;
+    border-right: none;
+    border-bottom: 15px solid rgb(0, 179, 255);
+    padding: 25px 20px 20px;
+  }
+
+  .side-container2{
+    width: auto;
+    display: flex;
+    flex-wrap: wrap;
+    gap: 8px 16px;
+    margin-top: 20px;
+  }
+
+  .side-container3{
+    width: auto;
+    margin-top: 30px;
+  }
+}
+
+@media (max-width: 768px){
+  .side-container1{
+    justify-content: space-between;
+  }
+
+  .title{
+    font-size: 42px;
+  }
+
+  .side-bar{
+    width: 100%;
+    height: auto;
+    min-height: 70px;
+    border-right: none;
+    border-bottom: 10px solid rgb(0, 179, 255);
+    padding: 16px 20px;
+  }
+
+  .side-container2,
+  .side-container3{
+    display: none;
+  }
+
+  .side-bar.open .side-container2,
+  .side-bar.open .side-container3{
+    display: block;
+  }
+
+  .side-container2{
+    flex-direction: column;
+    align-items: flex-start;
+    gap: 6px;
+  }
+
+  .side-contant{
+    margin-right: 0;
+    margin-top: 0;
+  }
+
+  .button-1{
+    width: 100%;
+    max-width: 220px;
+  }
+}
+
+@media (max-width: 480px){
+  .side-bar{
+    padding: 16px;
+  }
+
+  .title{
+    font-size: 36px;
+  }
+
+  .button-1{
+    max-width: 100%;
+    height: 46px;
+  }
 } 
