@@ -5,6 +5,7 @@
   max-width: 420px;
   aspect-ratio: 3 / 4;
   height: auto;
+  margin-left: 40px;
   transition: transform 0.4s ease, box-shadow 0.4s ease;
   border-style: solid;
   border-radius: 20px;
@@ -32,7 +33,6 @@
   padding-right: 0%;
   max-width: 520px;
   width: 100%;
-  margin-left: 30px;
 }
 
 .info{

@@ -78,6 +78,31 @@
       const sidebar = document.getElementById('sideBar');
       sidebar.classList.toggle('open');
     }
+
+    const form = document.getElementById('contactForm');
+    const successMessage = document.getElementById('formSuccess');
+
+    if (form) {
+      form.addEventListener('submit', function (event) {
+        event.preventDefault();
+
+        const formData = new FormData(form);
+        const name = formData.get('name')?.toString().trim() || '';
+        const email = formData.get('email')?.toString().trim() || '';
+        const subject = formData.get('subject')?.toString().trim() || '';
+        const message = formData.get('message')?.toString().trim() || '';
+
+        if (!name || !email || !subject || !message) {
+          successMessage.textContent = 'Please fill in all fields before submitting.';
+          successMessage.style.color = 'red';
+          return;
+        }
+
+        successMessage.textContent = `Thanks ${name}! Your message has been received.`;
+        successMessage.style.color = 'rgb(0, 179, 255)';
+        form.reset();
+      });
+    }
   </script>
 
   <div id="about">
@@ -209,25 +234,28 @@
     </div>
   </section>
   <h1 class="contact" id="get in touch">GET IN <span style="color: rgb(0, 179, 255);">TOUCH</span></h1>
-  <div class="contact-form1">
-  <div>
-  <p class="contact-text">FULL NAME</p>
-  <input type="text" class="input-field1" placeholder="Name">
-  </div>
-  <div class="contact-form-group">
-  <p class="contact-text">EMAIL ADDRESS</p>
-  <input type="email" class="input-field1" placeholder="Email">
-  </div>
-  </div>
-  <div class="contact-form2">
-  <p class="contact-text">SUBJECT</p>
-  <input type="text" class="input-field2" placeholder="Subject">
-  </div>
-  <div class="contact-form3">
-  <p class="contact-text">MESSAGE</p>
-  <input type="text" class="input-field2" placeholder="Message">
-  </div>
-  <button class="submit-button">SUBMIT</button>
+  <form class="contact-form" id="contactForm">
+    <div class="contact-form1">
+      <div>
+        <p class="contact-text">FULL NAME</p>
+        <input type="text" class="input-field1" name="name" placeholder="Name" required>
+      </div>
+      <div class="contact-form-group">
+        <p class="contact-text">EMAIL ADDRESS</p>
+        <input type="email" class="input-field1" name="email" placeholder="Email" required>
+      </div>
+    </div>
+    <div class="contact-form2">
+      <p class="contact-text">SUBJECT</p>
+      <input type="text" class="input-field2" name="subject" placeholder="Subject" required>
+    </div>
+    <div class="contact-form3">
+      <p class="contact-text">MESSAGE</p>
+      <textarea class="input-field2" name="message" placeholder="Message" rows="4" required></textarea>
+    </div>
+    <button type="submit" class="submit-button">SUBMIT</button>
+    <p class="form-success" id="formSuccess"></p>
+  </form>
   <footer id="footer">
     <div class="footer-container">
       <p class="footer-text">© 2026 Dibakar. All rights reserved.</p>
